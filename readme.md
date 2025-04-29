@@ -1,53 +1,53 @@
+# FINAL PROJECT
 
 
-# The User Management System Final Project: Your Epic Coding Adventure Awaits! 🎉✨🔥
+## Closed Issues
+Below are the links to closed issues along with brief descriptions:
 
-## Introduction: Buckle Up for the Ride of a Lifetime 🚀🎬
+1. **[Issue #1 - Email Verification Failure](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/issues/1)**  
+   When a new user is created, the system fails to send a verification email to Mailtrap. This issue has been resolved by ensuring the email service is correctly configured and triggers the verification process upon user creation.
 
-Welcome to the User Management System project - an epic open-source adventure crafted by the legendary Professor Keith Williams for his rockstar students at NJIT! 🏫👨‍🏫⭐ This project is your gateway to coding glory, providing a bulletproof foundation for a user management system that will blow your mind! 🤯 You'll bridge the gap between the realms of seasoned software pros and aspiring student developers like yourselves. 
+2. **[Issue #2 - Admin Email Verification](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/issues/3)**  
+   Previously, the system allowed admin accounts to bypass email verification, which is incorrect. This issue has been resolved by ensuring that admins are also required to verify their email before accessing the system.
 
-### [Instructor Video - Project Overview and Tips](https://youtu.be/gairLNAp6mA) 🎥
+3. **[Issue #3 - Weak Password Allowed](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/issues/5)**  
+   The system allowed weak passwords like '12345678' to be approved, which is a security risk. This issue has been fixed by implementing a password strength validator that ensures passwords contain uppercase and lowercase letters, numbers, and special characters (e.g., $, #, etc.).
 
-- [Introduction to the system features and overview of the project - please read](system_documentation.md) 📚
-- [Project Setup Instructions](setup.md) ⚒️
-- [Features to Select From](features.md) 🛠️
-- [About the Project](about.md)🔥🌟
+4. **[Issue #4 - Incorrect Role Update](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/issues/7)**  
+   During email verification, the role was incorrectly updated to AUTHENTICATED even if the role was ADMIN. This issue has been fixed to ensure that only users with the role ANONYMOUS are updated to AUTHENTICATED after successful email verification.
 
-## Goals and Objectives: Unlock Your Coding Superpowers 🎯🏆🌟
+5. **[Issue #5 - 401 Error on Token Handling](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/issues/9)**  
+   The require_role dependency did not properly handle invalid or missing tokens, resulting in a 401 error when accessing the delete_user endpoint. This issue has been resolved by improving token validation to ensure proper handling of missing or invalid tokens.
 
-Get ready to ascend to new heights with this legendary project:
+---
+## New Tests
+You can explore the details here in the new_tests branch: 
+ **[Link to Test branch](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/tree/new_tests)** 
 
-1. **Practical Experience**: Dive headfirst into a real-world codebase, collaborate with your teammates, and contribute to an open-source project like a seasoned pro! 💻👩‍💻🔥
-2. **Quality Assurance**: Develop ninja-level skills in identifying and resolving bugs, ensuring your code quality and reliability are out of this world. 🐞🔍⚡
-3. **Test Coverage**: Write additional tests to cover edge cases, error scenarios, and important functionalities - leave no stone unturned and no bug left behind! ✅🧪🕵️‍♂️
-4. **Feature Implementation**: Implement a brand new, mind-blowing feature and make your epic mark on the project, following best practices for coding, testing, and documentation like a true artisan. ✨🚀🎆
-5. **Collaboration**: Foster teamwork and collaboration through code reviews, issue tracking, and adhering to contribution guidelines - teamwork makes the dream work, and together you'll conquer worlds! 🤝💪🌍
-6. **Industry Readiness**: Prepare for the software industry by working on a project that simulates real-world development scenarios - level up your skills to super hero status  and become an unstoppable coding force! 🔝🚀🏆⚡
+---
 
-## Submission and Grading: Your Chance to Shine 📝✏️📈
+## New Feature: User Search and Filtering
+You can explore the details here in the feature branch:  
+**[Link to the Feature Branch](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/tree/feature)**
 
-1. **Reflection Document**: Submit a 1-2 page Word document reflecting on your learnings throughout the course and your experience working on this epic project. Include links to the closed issues for the **5 QA issues, 10 NEW tests, and 1 Feature** you'll be graded on. Make sure your project successfully deploys to DockerHub and include a link to your Docker repository in the document - let your work speak for itself! 📄🔗💥
+---
+### About feature
+- The Search and Filtering feature allows administrators to easily find and manage users. Admins can search by username, email, or role and filter users based on account status or registration date range. The user management API now supports these capabilities for improved efficiency.
 
-2. **Commit History**: Show off your consistent hard work through your commit history like a true coding warrior. **Projects with less than 10 commits will get an automatic 0 - ouch!** 😬⚠️ A significant part of your project's evaluation will be based on your use of issues, commits, and following a professional development process like a boss - prove your coding prowess! 💻🔄🔥
+### Feature Image
+![Image]()
+---
 
-3. **Deployability**: Broken projects that don't deploy to Dockerhub or pass all the automated tests on GitHub actions will face point deductions - nobody likes a buggy app! 🐞☠️ Show the world your flawless coding skills!
+## Docker Hub Repository
+### You can find the Docker image for this project on Docker Hub:  
+### [Link to Docker Hub Repository](https://hub.docker.com/repository/docker/ykshah1309/final_project/general)
+![Image]()
+---
 
-## Managing the Project Workload: Stay Focused, Stay Victorious ⏱️🧠⚡
+## My Experience
 
-This project requires effective time management and a well-planned strategy, but fear not - you've got this! Follow these steps to ensure a successful (and sane!) project outcome:
+I had a very good experience throughout this course, guided by Professor Keith Williams. This course provided me with the opportunity to dive into various cutting-edge technologies and tools, such as Docker and GitHub Actions, which were entirely new to me. These tools have significantly expanded my technical skill set, enhancing my ability to deploy, manage, and automate workflows efficiently.
 
-1. **Select a Feature**: [Choose a feature](features.md) from the provided list of additional improvements that sparks your interest and aligns with your goals like a laser beam. ✨⭐🎯 This is your chance to shine!
+One of the most valuable aspects of this course was the exposure to industry-level coding practices. The assignments and projects challenged me to adopt professional software development standards, including version control using Git, continuous integration with GitHub Actions, and containerization with Docker. These experiences have not only deepened my understanding of modern software development but also equipped me with the tools needed to work on real-world projects.
 
-2. **Quality Assurance (QA)**: Thoroughly test the system's major functionalities related to your chosen feature and identify at least 5 issues or bugs like a true detective. Create GitHub issues for each identified problem, providing detailed descriptions and steps to reproduce - the more detail, the merrier! 🔍🐞🕵️‍♀️ Leave no stone unturned!
-
-3. **Test Coverage Improvement**: Review the existing test suite and identify gaps in test coverage like a pro. Create 10 additional tests to cover edge cases, error scenarios, and important functionalities related to your chosen feature. Focus on areas such as user registration, login, authorization, and database interactions. Simulate the setup of the system as the admin user, then creating users, and updating user accounts - leave no stone unturned, no bug left behind! ✅🧪🔍🔬 Become the master of testing!
-
-4. **New Feature Implementation**: Implement your chosen feature, following the project's coding practices and architecture like a coding ninja. Write appropriate tests to ensure your new feature is functional and reliable like a rock. Document the new feature, including its usage, configuration, and any necessary migrations - future you will thank you profusely! 🚀✨📝👩‍💻⚡ Make your mark on this project!
-
-5. **Maintain a Working Main Branch**: Throughout the project, ensure you always have a working main branch deploying to Docker like a well-oiled machine. This will prevent any last-minute headaches and ensure a smooth submission process - no tears allowed, only triumphs! 😊🚢⚓ Stay focused, stay victorious!
-
-Remember, it's more important to make something work reliably and be reasonably complete than to implement an overly complex feature. Focus on creating a feature that you can build upon or demonstrate in an interview setting - show off your skills like a rockstar! 💪🚀🎓
-
-Don't forget to always have a working main branch deploying to Docker at all times. If you always have a working main branch, you will never be in jeopardy of receiving a very disappointing grade :-). Keep that main branch shining bright!
-
-Let's embark on this epic coding adventure together and conquer the world of software engineering! You've got this, coding rockstars! 🚀🌟✨
+The guidance provided by Professor Keith Williams was invaluable, and his expertise in the field ensured that the learning process was both enriching and insightful. Overall, this course has been an incredibly rewarding experience. I feel much more confident in applying my newfound skills to real-world projects, and I look forward to leveraging these skills in my future career.
