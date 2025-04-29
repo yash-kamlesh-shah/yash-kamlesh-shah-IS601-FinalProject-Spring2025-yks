@@ -35,13 +35,13 @@ You can explore the details here in the feature branch:
 - The Search and Filtering feature allows administrators to easily find and manage users. Admins can search by username, email, or role and filter users based on account status or registration date range. The user management API now supports these capabilities for improved efficiency.
 
 ### Feature Image
-![Image]()
+![Image](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/blob/main/FinalProject1.png)
 ---
 
 ## Docker Hub Repository
 ### You can find the Docker image for this project on Docker Hub:  
 ### [Link to Docker Hub Repository](https://hub.docker.com/repository/docker/ykshah1309/final_project/general)
-![Image]()
+![Image](https://github.com/yash-kamlesh-shah/yash-kamlesh-shah-IS601-FinalProject-Spring2025-yks/blob/main/FinalProject2.png)
 ---
 
 ## My Experience
